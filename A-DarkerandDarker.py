@@ -26,7 +26,7 @@ while True:
     # '#'が存在する列のインデックスを取得しておく
     black_col_index = [k for k, x in enumerate(input_mark_bk[i]) if x == '#']
     for j in black_col_index:
-      # 値が'#'だったら上下左右の値を'#'に変更(ここには無駄があるが改善方法思いつかず...)
+      # 値が'#'だったら上下左右の値を'#'に変更
       if input_mark_bk[i][j] == '#':
         # i=0の時はi-1は操作対象外
         if i != 0:
